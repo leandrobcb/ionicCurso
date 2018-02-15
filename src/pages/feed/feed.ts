@@ -15,6 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FeedPage {
   public nome_usuarios:string = "Leandro Barbosa-code";
+
+  public obj_feed = {
+    titulo:"leandro Barbosa",
+    data: "03 de dezembro de 1983",
+    descricao: "teste de um aplicativo novo",
+    qtd_likes:10,
+    qtd_comments:4,
+    time_comment:"10 horas atras"
+
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   public somaDoisNumeros(valor1:number, valor2:number):void {
